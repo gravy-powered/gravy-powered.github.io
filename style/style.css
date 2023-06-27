@@ -1,0 +1,51 @@
+/**
+    Insired by  Ninestars template
+*/
+
+/** General*/
+body {
+    font-family: "Public Sans", sans-serif;
+    color: #000;
+}
+
+
+/**About**/
+.aboutme-header {
+    font-family: "Public Sans", sans-serif;
+    color: #b6ff00ff;
+    padding: 1px;
+    margin: 10px;
+    width: 10%;
+    height: 10%;
+    padding-left: 15%;
+    padding-bottom: 0%;
+}
+
+.aboutme-info {
+    font-family: "Public Sans", sans-serif;
+    color: #f00f;
+    /*border: 50px; */
+    width: 40%;
+    height: 10%;
+    font-size: large;
+
+
+    justify-content: center;
+    align-items: stretch;
+    
+    border-radius: 0px;
+    line-height: 20px;
+    
+    background: #fdf1ec;
+    display: flex;
+    padding: 1%;
+    margin: 10px;
+    padding-top: -5%;
+
+}
+
+
+.my-image {
+    font-family: "Public Sans", sans-serif;
+    border-radius: 45%;
+}
