@@ -48,6 +48,7 @@ function setSpeed40() {
 
 function toTop() {
   window.scrollTo(0,0);
+  window.scrollBy(0, -99999);
 }
 
 //code lifted from https://www.geeksforgeeks.org/how-to-read-a-local-text-file-using-javascript/
