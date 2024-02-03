@@ -1,0 +1,86 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8" /> 
+	<meta name="viewport" content-after-loading="width=device-width, initial-scale=1.0" /> 
+	<link rel="stylesheet" href="style/lyrics-style.css" /> 
+	<title> 
+		Auto scroll lyrics
+	</title> 
+</head> 
+
+<body>
+    <script>
+        window.onload = function (){
+
+        window.scrollTo(70,0);
+
+}
+    </script>
+
+
+
+	<div class="topnav" style="background-color: rgb(209, 209, 82); position: fixed; width: 100%; 
+    padding-top:10px; padding-left: 10px; padding-bottom: 10px;">
+		
+
+		<button onclick="setSpeed0()">Stop Scroll</button> 
+
+		<button onclick="setSpeed1()">Scroll 1px</button> 
+
+		<button onclick="setSpeed2()" >Scroll 2px</button> 
+
+		<button onclick="setSpeed5()" >Scroll 5px</button>  
+
+		<button onclick="setSpeed10()" >Scroll 10px</button> 
+
+		<button onclick="setSpeed25()" >Scroll 25px</button>  
+
+		<button onclick="setSpeed40()" >Scroll 40px</button> 
+	  </div>
+      
+	  <div style="height: 100px;">
+        <br>
+        <br>
+        <center> 
+            <h2><b>Your lyrics here
+            (Upload a Text File) </b></h2>
+        </center>
+
+      </div>
+
+      <div id="lyric-page">
+
+        <input type="file" id="input_file">
+        
+        <center> 
+            <br><p>***</p><br>
+
+            <div id="song_lyrics">
+                    <div>
+                    
+                        <strong>
+                            
+                            <pre id="output"></pre></div></div>
+
+
+                        </strong>
+
+                        <p>***</p><br>
+            </div>
+            
+            
+    
+        </center>
+
+
+      </div>
+	  
+
+    <div id="content-before-loading"></div>
+	<script src="script.js"></script> 
+	
+</body> 
+
+</html>

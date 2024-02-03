@@ -1,0 +1,14 @@
+body {
+    font-family: "Public Sans", sans-serif;
+    color: #000;
+    background-color: #75bfc9;
+    height: 7000px;
+
+}
+
+#lyric-page { 
+    width: 50;
+    height: 50;
+
+    background-color:#dbd4cf;
+}
