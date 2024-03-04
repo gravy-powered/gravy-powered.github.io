@@ -7,11 +7,15 @@
     box-sizing: border-box;
 }
 body {
-    font-family: "Public Sans", sans-serif;
+    font-family: 'Courier New', Courier, monospace;
+    /* "Public Sans", sans-serif; */
     color: #000;
 
-    background-color: #3cbbcc;
-    background-image: linear-gradient(to right, #dddddd, #9a9d9e);
+    background-color: #0c2d32;
+    background-image: linear-gradient(to right, #0000, #1b1a1a);
+
+/* 
+    background-image: linear-gradient(to right, #dddddd, #9a9d9e); */
 }
 
 
@@ -66,8 +70,9 @@ body {
 
 .my-image {
     font-family: "Public Sans", sans-serif;
-    border-radius: 45%;
+    border-radius: 50%;
     border-inline-color: black;
+    padding-top: 0;
 }
 
 #gradient {
@@ -88,6 +93,6 @@ body {
     height:2px;
     border-width:0;
     color:gray;
-    background-color:#0a626d;
+    background-color:#050505;
 }
 

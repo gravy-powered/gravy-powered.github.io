@@ -1,0 +1,54 @@
+/**
+    Insired by  Ninestars template
+*/
+
+/** General*/
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Courier New', Courier, monospace;
+    /* "Public Sans", sans-serif; */
+    /* color: #000; */
+
+    background-color: #4d4747;
+
+}
+
+.central{
+    width: 26%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.boxes{
+    display: inline-block;
+}
+.word-boxes{
+    display: inline-flex;
+    vertical-align:bottom;
+}
+
+.flush-img{
+    margin: 0px !important;
+    padding: 0px  !important;
+    width: 100px;
+    height: 100px;
+    background: red;
+    vertical-align: bottom;
+}
+
+
+
+.Box {
+    display: inline-block;
+  }
+  
+  .myDiv {
+    background: blue;
+    width: 700px;
+    color: white;
+  }
+
+
+

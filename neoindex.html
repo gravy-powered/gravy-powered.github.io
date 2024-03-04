@@ -4,19 +4,20 @@
 <head>
     <!-- Meta -->
     <meta charset="UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="resume" content="cover letter">
+
     <title>Emmanuel's Website</title>
 
     <!-- Favicon -->
     <link href="images/MyFav.bmp" rel="icon">
     <!-- Style -->
-    <link rel="stylesheet" href="style/style.css" >
+    <link rel="stylesheet" href="style/neostyle.css" >
     <!--Bootstraps -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
 
     <!-- Bootstrap core CSS -->
     <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
@@ -25,88 +26,110 @@
     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="navbar-fixed-top.css" rel="stylesheet">
+    <!-- <link href="navbar-fixed-top.css" rel="stylesheet"> -->
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+    <!-- <script src="../../assets/js/ie-emulation-modes-warning.js"></script> -->
     
 
 </head>
 	
 <body class="body">
-    <nav class="navbar navbar-default navbar-fixed-top navbar-dark">
-        <ul class="nav navbar-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#aboutme">Background</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-        <br /><br />
+    <div class="topnav" style="background-color: rgb(209, 209, 82); position:fixed; block-size: 5%; inline-size: 100%; padding:0.5%">
+           <div style="padding-left: 4%; padding-top: 0.2%;">  
+            <a href="#">Home</a> |
+            <a href="#aboutme">Background</a> |
+            <a href="#skills">Skills</a> | 
+            <a href="#contact">Contact</a>  
 
 
-        <section>
-            <div style="padding-left: 40%">
-                <h1 style="font-size: 40px; text-shadow: 1.5px 1px #ffffff;"><strong>Emmanuel Akpan</strong></h1>
-                <p style="padding-left:6.6%;padding-top:-1%"><strong>Computer Science Engineer</strong></p>
-            </div>
-        </section>
+           </div>
+    </div>
 
-        <br> <section id="aboutme">
+    <br/>
+
+    <section>
+
+        <center>
+            <h1 style="padding-left:0%; font-size: 40px; text-shadow: 1.5px 1px #ffffff;"><strong>Emmanuel Akpan</strong></h1>
+            <h2 style="padding-left:0%;padding-top:-1%; text-shadow: 1.5px 1px #ffffff; font-size: 25px;">  <strong>Computer Science Engineer</strong></h2>
+        </center>
+
+    </section>
+    
+    <br>
+    
+    <section id="aboutme">
     <div style="background: #763a3a; padding-top: 1%; margin: 0px; background: 
     linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('images/sunset.jpg'); 
     background-size: 100.9% 175.7%;
-    border-top: 40px; border-color: black;">
-        <h2 style="padding-left: 45%"><strong>Who I Am</strong></h2>
-        <div class="boxes">
-            <div style="padding-left: 12%; padding-right:10%; padding-top: 5%; padding-bottom: 50px;">
+    border-top: 40px; border-color: black;"><hr>
 
-                <div style="background-color: #0000008a; 
-                border-radius: 0%; padding-left: 10%; padding-top: 5%; padding-bottom: 5%;">
-                    <p style="font-size:24px; color: rgb(221, 221, 221); text-shadow: 1px 1px #0e0c0c;">
-                        Hello! I am a St. Louis born computer engineer with a focus on software. 
+    <h2 style="padding-left: 0%; text-align: center;"><strong>Who I Am</strong></h2>
+        <div>
+            <div style="padding-left: 15%; padding-right:10%; padding-top: 0%; padding-bottom: 25px; ">
+
+                <div class="word-boxes">
+                    <div style="background-color: #0000008b; width: 700px; height: 300px;"><center></center>
+                        <p style="color: rgb(221, 221, 221); text-shadow: 1px 1px #0e0c0c; 
+                        padding: 10%;
+                        font-size: 20px;
+                        text-align: center;
+                        ">
+                        Hello! I'm a St. Louis born computer engineer with a focus on software. 
                         I have expereince programming applications of virtual and augmented reality, data
                         processing, embedded systems and more. 
-                    </p>
+                        </p>
+                        
+                    </div>   
                 </div>
+                <div class="word-boxes">
+                    <img src="images/profilepicture.jpg" alt="Emmanuel Akpan's picture" style="  
+                    width: 300px;
+                    height: 300px;
+                    " >
+                </div> 
                 
             </div>
-            
-
-            <div style="padding-right: 17%; padding-bottom:4%">
-                <div>
-                    <img src="images/profilepicture.jpg" alt="Emmanuel Akpan's picture" class="my-image" width="300" height="300">
-
-                </div>
-                
-            </div>
-
-        </div>
+        </div>  <br>
     </div>
 
-    <!-- <div style="height: 250px;"> -->
-
-    </div>
 
     <div style="background: black; padding-top: 1%; margin: 0px;">
-        <h2 style="padding-left: 40%; color: #604f4f"><strong>What I've Done</strong></h2>
-        <div class="boxes">
-            <div style="padding-left: 10%; padding-bottom:7%">
-                <img src="images/self.png" alt="Emmanuel Akpan's self portrait picture" class="my-image" width="300" height="300">
+        
+
+        <h2 style="padding-left: 0%; text-align: center; color: #604f4f"><strong>What I've Done</strong></h2>
+
+        <div style="padding-left: 15%;">
+            <div class="word-boxes">
+                <div style="padding-left: 0%; padding-bottom:0%">
+                    <img src="images/self.png" alt="Emmanuel Akpan's self portrait picture" 
+                    style="  
+                    width: 300px;
+                    height: 300px;"
+                    >
+                </div>
             </div>
 
-            <div style="padding-left: 10%; padding-right:10%; padding-top: 3%">
-                <p style="font-size:24px; color:#604f4f; text-shadow: 1px 1px #8d8484;">
-                    I attended undergrad at the University of Iowa and completed my Bachelor's Degree in Computer Science and Engineering in the spring of 2023. While I'm interested in continuing school at a cerain point,
-                    I'd like to focus on utilizing coding my skills in places beyond academia.
+            <div class="word-boxes">
+                <div style="background-color: black; width: 800px; height: 300px;">
+                    <p style="font-size:18px; color:#604f4f; text-shadow: 1px 1px #8d8484; 
+                    padding-left: 10%;
+                    padding-right: 10%;
+                    padding-top: 3%;">
+                        I attended undergrad at the University of Iowa and completed my Bachelor's Degree in Computer Science and Engineering in the spring of 2023. While I'm interested in continuing school at a cerain point,
+                        I'd like to focus on utilizing coding my skills in places beyond academia.
+                        <br><br>
+                        
+                        My other interests include art of any kind, graphic design, listening to and producing music, and engaging in community activities.
+                    </p>
                     
-                    I also have interests in art of any kind, graphic design, listening to and producing music, and engaging in community activities.
-                </p>
+                </div>
             </div>
-
-
-        </div>
+        </div><br>
+        <hr>
+        <br>
     </div>
 
     <!-- <div style="height: 250px;"></div> -->
@@ -117,9 +140,19 @@
                 <h3 class="subheader">Skills and Projects</h3>
                 <div class="row">
                     <div class="column-2" style="background-color:#aaa;">
-                        <div style="padding-left: 3%; line-height: 20px; padding-top:8px">
+                        <div style="padding: 2%; line-height: 20px;">
 
-                            <strong>Coding</strong>
+                            <h2><strong>Coding</strong></h2>
+                            <h3>
+                            <li>Object Oriented and Functional</li>
+                            <li>Java/Kotlin</li>
+                            <li>Python</li>
+                            <li>HTML/PHP</li>
+                            <li>Matlab</li>
+                            <li>Android Development</li>
+                            <li>Unity/VR Development</li></h3>
+
+                            <!-- <strong>Coding</strong>
                             <li>C#/C++/C</li>
                             <li>Java/Kotlin</li>
                             <li>Python</li>
@@ -144,7 +177,7 @@
                             <li>Extended Reality Circuit Designer</li>
                             <li>Virtual Reality and Interactive Play</li>
                             <li>Circuit Workshop for Youth</li>
-                            <li>Homecoming Mural</li><br>
+                            <li>Homecoming Mural</li><br> -->
 
                             <!-- <strong><a href="#">My Resume</a></strong>-->
                         </div>
@@ -205,8 +238,6 @@ border-radius:10px;  background-color:#2b2525">
 
 </section>
 
-        
-
         <br> <section id="contact">
             <div style="padding-left:1%">
                 <h3 class="subheader">Contact Me</h3>
@@ -215,6 +246,7 @@ border-radius:10px;  background-color:#2b2525">
                         Connect on <a href="https://www.linkedin.com/in/emmanuel-a-b20011101/">LinkedIn</a>
                         | Reach out at <a href="mailto:ra.emmanuel.a@gmail.com">ra.emmanuel.a@gmail.com </a>
                         | See my Github <a href="https://github.com/the1eman">here</a> 
+                        | See my art <a href="https://www.behance.net/emmanuelbakpan/projects">here</a> 
                     </p>
                 </div>
             </div>
