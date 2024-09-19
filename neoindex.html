@@ -1,6 +1,29 @@
 <!DOCTYPE html>
 <html style="font-size: 16px;" lang="en" class="u-responsive-md">
 
+<script>
+    // // window.addEventListener("load");
+    // function mySubmit(){ 
+    //     event.preventDefault();
+    // }
+    // const x = document.getElementById("mySubmitButton");
+    // x.addEventListener("click",mySubmit);
+    // document.getElementById('myForm').addEventListener("click", function(event){event.preventDefault()});
+    // from https://github.com/levinunnink/html-form-to-google-sheet?tab=readme-ov-file
+
+    window.addEventListener("load", function() {
+        const form = document.getElementById('myForm');
+        form.addEventListener("submit", function(e) {
+                e.preventDefault();
+                const data = new FormData(form);
+                const action = e.target.action;
+                fetch(action, { method: 'POST',  body: data,  }).then(() => { alert("Message sent.");})
+            });
+    });
+
+
+</script> 
+
 <head>
     <!-- Meta -->
     <meta charset="UTF-8">
@@ -35,10 +58,10 @@
     <br/>
 
     <section>
-        <div style="height: 800px; background-color: #FCFC62;">
+        <div style="height: 800px; background-color: black;">
                 <div style="text-align: center; padding-top: 40%;">
-                    <h1 style="padding-left:0%; font-size: 40px; text-shadow: 1.5px 1px #ffffff;"><strong>Emmanuel Akpan</strong></h1>
-                    <h2 style="padding-left:0%;padding-top:-1%; text-shadow: 1.5px 1px #ffffff; font-size: 25px;">  <strong>Computer Scientist and Engineer</strong></h2>
+                    <h1 style="padding-left:0%; font-size: 40px; text-shadow: 1px 1px #ffffff; color: #FCFC62; letter-spacing: 4px;"><strong>Emmanuel Akpan</strong></h1>
+                    <h2 style="padding-left:0%;padding-top:-1%; text-shadow: 1px 1px #ffffff; font-size: 25px; color: #FCFC62; letter-spacing: 2px;">  <strong>Computer Scientist and Engineer</strong></h2>
                 </div>
         </div>
 
@@ -161,8 +184,7 @@
                     <div class="column-2" style="background-color:#2571dc;">
                         <div style="padding: 1%;">
                             <div>
-                                Click <a href="resume_6.pdf" target="_blank">here</a> to see my full resume 
-                                and <a href="#">here</a> to see my projects.  
+                                <!-- Click <a href="resume_6.pdf" target="_blank">here</a> to see my full resume and <a href="#">here</a> to see my projects.   -->
                             </div>
                         </div>
                     </div>
@@ -182,27 +204,35 @@
 
                     <div style="text-align: center; padding-left: 10%;">
 
-                        <form action="" >
+                        <form 
+                        id="myForm"
+                        method="post"
+                        action="https://script.google.com/macros/s/AKfycbw2V0_Dg994ihgHcE__RuczarCvyMjwCc4FTbnNkv6TvwHaeoJnRc0evqg9Huxm_ot6/exec" >
+                        
                             <div style="text-align: left;"> 
-                                <label for="name">Name</label><br>
-                                <input type="text" id="name" name="name" value=" " required><br>
+                                <label for="Name">Name</label><br>
+                                <input type="text" id="Name" name="Name" placeholder="name" required><br>
                             </div>
 
                             <div style="height: 10px;"> </div>
 
                             <div style="text-align: left;"> 
-                                <label for="email">Email</label><br>
-                                <input type="text" id="email" name="email" value=" " required><br><br>
+                                <label for="Email">Email</label><br>
+                                <input type="email" id="Email" name="Email" placeholder="email" ><br><br>
                             </div>
 
+
                             <div style="text-align: left;">
-                                <label for="message">Message</label><br>
-                                <textarea id="message" name="message" placeholder="Your message here" maxlength="500" 
-                                style="height: 100px; width: 90%; resize: none;" required> </textarea> <br><br>
+                                <label for="Message">Message</label><br>
+                                <textarea id="Message" name="Message" placeholder="Your message here" maxlength="500" 
+                                style="height: 100px; width: 90%; resize: none;" required></textarea> <br><br>
                             </div>
 
                             <div style="padding-right: 10%;">
-                                <input type="submit" value="Submit" style="text-align: center;"> <br><br>
+                                <!-- <input type="submit" value="Submit!" style="text-align: center;">  -->
+                                <button type="submit" style="border-radius: 10%;"id="mySubmitButton">SUBMIT</button>
+                                <!-- <button id="mySubmitButton">SUBMIT </button> -->
+                                <br><br>
                             </div>
                           </form> 
                     </div>
@@ -256,3 +286,4 @@
 </body>
 
 </html>
+
