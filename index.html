@@ -1,112 +1,132 @@
 <!DOCTYPE html>
 <html style="font-size: 16px;" lang="en" class="u-responsive-md">
 
+<script>
+    
+    window.addEventListener("load", function() {
+        const form = document.getElementById('myForm');
+        form.addEventListener("submit", function(e) {
+                e.preventDefault();
+                const data = new FormData(form);
+                const action = e.target.action;
+                fetch(action, { method: 'POST',  body: data,  }).then(() => { alert("Message sent.");})
+            });
+    });
+
+
+</script> 
+
 <head>
     <!-- Meta -->
     <meta charset="UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="resume" content="cover letter">
+
     <title>Emmanuel's Website</title>
 
     <!-- Favicon -->
     <link href="images/MyFav.bmp" rel="icon">
     <!-- Style -->
-    <link rel="stylesheet" href="style/style.css" >
-    <!--Bootstraps -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-
-    <!-- Bootstrap core CSS -->
-    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="navbar-fixed-top.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+    <link rel="stylesheet" media="screen and (min-device-width: 1000px)" href="style/neostyle.css" >
     
-
 </head>
+
 	
 <body class="body">
-    <nav class="navbar navbar-default navbar-fixed-top navbar-dark">
-        <ul class="nav navbar-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#aboutme">Background</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-        <br /><br />
 
+    <div class="topnav" style="background-color:#FCFC62; position:fixed; block-size: 5%; 
+    inline-size: 100%; padding:0.5%; align-self: left;">
+    
+           <div style="padding-left: 4%; padding-top: 0.2%; text-align: center; color: #1b5099;">  
+            <a href="#">Home</a> |
+            <a href="#aboutme">Background</a> |
+            <a href="#skills">Skills</a> | 
+            <a href="#contact">Contact</a>  
 
-        <section>
-            <div style="padding-left: 40%">
-                <h1 style="font-size: 40px; text-shadow: 1.5px 1px #ffffff;"><strong>Emmanuel Akpan</strong></h1>
-                <p style="padding-left:6.6%;padding-top:-1%"><strong>Computer Science Engineer</strong></p>
-            </div>
-        </section>
+           </div>
+    </div>
 
-        <br> <section id="aboutme">
+    <br/>
+
+    <section>
+        <div style="height: 800px; background-color: black;">
+                <div style="text-align: center; padding-top: 40%;">
+                    <h1 style="padding-left:0%; font-size: 40px; text-shadow: 1px 1px #ffffff; color: #FCFC62; letter-spacing: 4px;"><strong>Emmanuel Akpan</strong></h1>
+                    <h2 style="padding-left:0%;padding-top:-1%; text-shadow: 1px 1px #ffffff; font-size: 25px; color: #FCFC62; letter-spacing: 2px;">  <strong>Computer Scientist and Engineer</strong></h2>
+                </div>
+        </div>
+
+    </section>
+    
+    <!-- <br> -->
+    
+    <section id="aboutme">
+
     <div style="background: #763a3a; padding-top: 1%; margin: 0px; background: 
     linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('images/sunset.jpg'); 
     background-size: 100.9% 175.7%;
-    border-top: 40px; border-color: black;">
-        <h2 style="padding-left: 45%"><strong>Who I Am</strong></h2>
-        <div class="boxes">
-            <div style="padding-left: 12%; padding-right:10%; padding-top: 5%; padding-bottom: 50px;">
+    border-top: 40px; border-color: black;"><hr>
 
-                <div style="background-color: #0000008a; 
-                border-radius: 0%; padding-left: 10%; padding-top: 5%; padding-bottom: 5%;">
-                    <p style="font-size:24px; color: rgb(221, 221, 221); text-shadow: 1px 1px #0e0c0c;">
-                        Hello! I am a St. Louis born computer engineer with a focus on software. 
-                        I have expereince programming applications of virtual and augmented reality, data
-                        processing, embedded systems and more. 
-                    </p>
+   
+        <div >
+            <h2 style="padding-left: 0%; text-align: center; font-size: 180%;"><strong>Who I Am</strong></h2>
+            <div style="text-align: center; ">
+
+                <div class="word-boxes">
+                    <div style="background-color: #000000a9; width: 700px; height: 300px;">
+                        <p style="color: rgb(221, 221, 221); text-shadow: 1px 1px #0e0c0c; 
+                        padding: 7%;
+                        font-size: 20px;
+                        text-align: center;
+                        ">
+                        Hello! I'm a Missouri born, Iowa residing computer engineer with a focus on software. 
+                        I have expereince working on projects involving virtual and augmented reality, data
+                        processing, embedded systems, and more. I've always had a passion for everything involving 
+                        electronics, so I hope to keep teaching and learning about the field.
+                
+                        </p>
+                        
+                    </div>   
                 </div>
+                <div class="word-boxes">
+                    <img src="images/profilepicture.jpg" alt="Emmanuel Akpan's picture" style="  
+                    width: 300px;
+                    height: 100%;
+                    " >
+                </div> 
                 
             </div>
-            
-
-            <div style="padding-right: 17%; padding-bottom:4%">
-                <div>
-                    <img src="images/profilepicture.jpg" alt="Emmanuel Akpan's picture" class="my-image" width="300" height="300">
-
-                </div>
-                
-            </div>
-
-        </div>
+        </div>  <br>
     </div>
 
-    <!-- <div style="height: 250px;"> -->
-
-    </div>
 
     <div style="background: black; padding-top: 1%; margin: 0px;">
-        <h2 style="padding-left: 40%; color: #604f4f"><strong>What I've Done</strong></h2>
-        <div class="boxes">
-            <div style="padding-left: 10%; padding-bottom:7%">
-                <img src="images/self.png" alt="Emmanuel Akpan's self portrait picture" class="my-image" width="300" height="300">
+        <h2 style="text-align: center; color: #FCFC62; font-size: 180%;"><strong>The Story So Far</strong></h2>
+
+        <div style="text-align: center;">
+            <div class="word-boxes">
+                <div style="padding-left: 0%; padding-bottom:0%">
+                    <img src="images/self.png" alt="Emmanuel Akpan's self portrait picture"  style=" width: 300px;  height: 300px;"  >
+                </div>
             </div>
 
-            <div style="padding-left: 10%; padding-right:10%; padding-top: 3%">
-                <p style="font-size:24px; color:#604f4f; text-shadow: 1px 1px #8d8484;">
-                    I attended undergrad at the University of Iowa and completed my Bachelor's Degree in Computer Science and Engineering in the spring of 2023. While I'm interested in continuing school at a cerain point,
-                    I'd like to focus on utilizing coding my skills in places beyond academia.
+            <div class="word-boxes">
+                <div style="background-color: black; width: 800px; height: 300px;">
+                    <p style="font-size:18px; color:#FCFC62; text-shadow: 1px 1px #8d8484; padding-left: 10%; padding-right: 10%;
+                    padding-top: 3%; text-align: justify;">
+                        I attended undergrad at the University of Iowa and completed my Bachelor's Degree in Computer Science and Engineering. While I'm interested in continuing school at a cerain point,
+                        I'd like to focus on utilizing my skills in places beyond academia. Currently, I am working as an electrical design engineer at a manufacturing company.
+                        <br><br>
+                        
+                        My other interests include art of any kind, graphic design, listening to and producing music, and engaging in community activities.
+                    </p>
                     
-                    I also have interests in art of any kind, graphic design, listening to and producing music, and engaging in community activities.
-                </p>
+                </div>
             </div>
-
-
-        </div>
+        </div><br>
+        <hr>
+        <br>
     </div>
 
     <!-- <div style="height: 250px;"></div> -->
@@ -114,120 +134,136 @@
     <div id="skills" style="background-color: #ffff; margin:0px; padding-top:10px;
            background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('images/mountains.jpg'); background-size: 100.9% 175.7%;">
             <div style="margin:1%; padding:1%">
-                <h3 class="subheader">Skills and Projects</h3>
+
+                <h2 class="subheader"><strong>Skills and Experience</strong></h2>
                 <div class="row">
-                    <div class="column-2" style="background-color:#aaa;">
-                        <div style="padding-left: 3%; line-height: 20px; padding-top:8px">
+                    <div class="column-2" style="background-color:#5e94de;">
+                        <div style="padding: 2%; line-height: 20px;">
 
-                            <strong>Coding</strong>
-                            <li>C#/C++/C</li>
-                            <li>Java/Kotlin</li>
-                            <li>Python</li>
-                            <li>HTML/PHP</li>
-                            <li>Matlab</li>
-                            <li>Android Development</li>
-                            <li>Unity/VR Development</li>
-                            <li>SQL</li>
-                            <li>Javascript</li>
-
-                            <br>
-                            <strong>Other Software</strong>
-                            <li>Inkscape</li>
-                            <li>Photoshop/Krita</li>
-                            <li>Pro Tools/Audition</li>
-                            <li>Cyberlink PowerDirector</li>
-                            <li>Excel</li>
-
-                            <br>
-
-                            <strong>Past Projects</strong>
-                            <li>Extended Reality Circuit Designer</li>
-                            <li>Virtual Reality and Interactive Play</li>
-                            <li>Circuit Workshop for Youth</li>
-                            <li>Homecoming Mural</li><br>
-
-                            <!-- <strong><a href="#">My Resume</a></strong>-->
+                            <h2><strong>Coding Background</strong></h2>
+                            <h3>
+                            <li>Object Oriented and Functional Programming</li>
+                            <li>Web and Mobile Development</li>
+                            <li>Microcontroller Programming</li>
                         </div>
                     </div>
 
+                    <div class="column-2" style="background-color:#4884d8;">
+                        <div style="padding: 2%; line-height: 20px;">
 
+                            <h2><strong>Software for Editing and Design</strong></h2>
+                            <h3>
+                            <li>Pro Tools/Audition</li>
+                            <li>Photoshop</li>
+                            <li>Inkscape</li>
+                            <li>Krita</li>
+                            <li>PowerDirector</li>
+                        </div>
+                    </div>
 
-                    <div class="column-2" style="background-color:#bbb; height:490px">
-                        <div style="padding-left:80px; padding-top:70px">
+                    <div class="column-2" style="background-color:#2571dc;">
+                        <div style="padding: 2%; line-height: 20px;">
+
+                            <h2><strong>Leadership</strong></h2>
+                            <h3>
+                            <li>Resident Assistant</li>
+                            <li>Art-Engineering Vice President</li>
+                            <li>Circuit Workshop Instructor</li>
+                            <li>VR Experience Chaperone</li>
+                        </div>
+                    </div>
+            
+                    <div class="column-2" style="background-color:#2571dc;">
+                        <div style="padding: 1%;">
                             <div>
-                                <!--picture sliding-->
-                                <div id="myCarousel" class="carousel slide mx-auto" date-ride="carousel" style="width: 550px; border: 3px solid black; 
-border-radius:10px;  background-color:#2b2525">
-                                    <!--Wrapper for slides-->
-                                    <div class="carousel-inner"  style="height:350px">
-                                        <div class="item active">
-                                            <div>
-                                                <img src="images/xr.png" alt="The XR app I worked on" width="550" height="300">
-                                            </div>
-                                            
-                                            <p><center><h4 style="color:white;">The XR Circuit designer I collobarated on.</h4></center></p>
-                                        </div>
-
-                                        <div class="item">
-                                            <div style="padding-left:10%">
-                                                <img src="images/dia.png" alt="Cuircuit diagram" width="400" height="300">
-                                            </div>
-                                            <p><center><h4 style="color:white;">A circuit diagram I designed as part of a workshop.</h4></center></p>
-                                        </div>
-
-                                        <div class="item" >
-                                            <div style="padding-left:40%">
-                                                <img src="images/app_pic.png" alt="My app that I made" width="100" height="300">
-                                            </div>
-                                            
-                                            <p><center><h4 style="color:white;">A small app I made for a friend to help with math skills.</h4></center></p>
-                                        </div>
-                                    </div>
-
-                                    <!--Left and right controls-->
-                                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                                        <span class="glyphicon glyphicon-chevron-left"></span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                                        <span class="glyphicon glyphicon-chevron-right"></span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
                 </div>
-                <br>
+                <br><br>
+
+
             </div>
-        </div>
-
-
-</section>
-
-        
-
-        <br> <section id="contact">
-            <div style="padding-left:1%">
-                <h3 class="subheader">Contact Me</h3>
-                <div class="center">
-                    <p style="color: #000000;">
-                        Connect on <a href="https://www.linkedin.com/in/emmanuel-a-b20011101/">LinkedIn</a>
-                        | Reach out at <a href="mailto:ra.emmanuel.a@gmail.com">ra.emmanuel.a@gmail.com </a>
-                        | See my Github <a href="https://github.com/the1eman">here</a> 
+            <section id="contact">
+                <div style="padding-left:1%; padding-top: 1%; background-color: #FCFC62; height: 400px;">
+                 
+                    <p style="text-align: center; color: #4884d8; text-shadow: 2px 1px #000000; letter-spacing: 1px; font-size: 30px;">
+                        <strong>Contact Me </strong>
                     </p>
+                        
+                    <div style="text-align: center; padding-right: 0%;">
+                        <h2 style="color: #4884d8; text-shadow: 2px 1px #000000;">Reach out to see my full resume, portfolio work, or just say hi.</h2>
+                        <!-- <br>     -->
+                    </div>
+
+                    <div style="text-align: center; padding-left: 10%;">
+
+                        <form 
+                        id="myForm"
+                        method="post"
+                        action="https://script.google.com/macros/s/AKfycbw2V0_Dg994ihgHcE__RuczarCvyMjwCc4FTbnNkv6TvwHaeoJnRc0evqg9Huxm_ot6/exec" >
+                        
+                            <div style="text-align: left;"> 
+                                <label for="Name">Name</label><br>
+                                <input type="text" id="Name" name="Name" placeholder="name" required><br>
+                            </div>
+
+                            <div style="height: 10px;"> </div>
+
+                            <div style="text-align: left;"> 
+                                <label for="Email">Email</label><br>
+                                <input type="email" id="Email" name="Email" placeholder="email" ><br><br>
+                            </div>
+
+
+                            <div style="text-align: left;">
+                                <label for="Message">Message</label><br>
+                                <textarea id="Message" name="Message" placeholder="Your message here" maxlength="500" 
+                                style="height: 100px; width: 90%; resize: none;" required></textarea> <br><br>
+                            </div>
+
+                            <div style="padding-right: 10%;">
+                                <!-- <input type="submit" value="Submit!" style="text-align: center;">  -->
+                                <button type="submit" style="border-radius: 10%;"id="mySubmitButton">SUBMIT</button>
+                                <!-- <button id="mySubmitButton">SUBMIT </button> -->
+                                <br><br>
+                            </div>
+                          </form> 
+                    </div>
+
+                    <div class="center" style="text-align: center;">
+                        <p style="color: #1b5099;"><strong>
+                            Connect on <a href="https://www.linkedin.com/in/emmanuel-a-b20011101/">LinkedIn</a> 
+                            | See my Github <a href="https://github.com/the1eman">here</a> 
+                            | See my art <a href="https://www.behance.net/emmanuelbakpan/projects">here</a> </strong>
+                        </p>
+                    </div>
                 </div>
+
+            </section>
+
+            
+        </div>
+        
+    </section>
+    <div style="height: 100px;"> </div>
+    
+
+
+        <section>
+            <div style="height: auto;">
+                <hr color="black">
+                <footer>
+                    <div class="center" style="font-size:10px; text-align: center;">
+                        Edited by Emmanuel Akpan
+                    </div>
+                </footer>
             </div>
+                
         </section>
-
-
-        <hr class="hr-help"><footer>
-            <div class="center" style="font-size:10px; padding-left: 45%">
-                Edited by Emmanuel Akpan
-            </div>
-        </footer>
-
 
 </body>
 
 </html>
+
